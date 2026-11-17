@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Yallakora.Persistence\Yallakora.Persistence.csproj" />
-    <ProjectReference Include="..\Core\Yallakora.Domain\Yallakora.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

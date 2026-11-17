@@ -1,4 +1,5 @@
 using Yallakora.Domain.Interfaces;
+using Yallakora.Persistence;
 using Yallakora.Persistence.Data.SqlHelper;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<ISqlHelper, SqlHelper>();
+builder.Services.AddPersistence(builder.Configuration);
 
 var app = builder.Build();
 
